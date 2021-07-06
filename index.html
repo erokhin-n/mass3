@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<meta charset="UTF-8">
+	<meta-name = “viewport” content=”width=device-width, initial-scale=1.0, maximum-scale=1.0 , user-scalable=0”> 
+  <link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300&display=swap" rel="stylesheet">
+  <!-- Yandex.Metrika counter -->
+  <!-- <script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(74617684, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/74617684" style="position:absolute; left:-9999px;" alt="" /></div></noscript> -->
+  <!-- /Yandex.Metrika counter -->
+	<title>Document</title>
+	<meta name="format-detection" content="telephone=no" />
+</head>
+<body>
+<div class="wrapper">
+	<header class="header" id= 'header'>
+		<nav class="header_menu">
+			<ul class="header_list">
+				<li><div class="menu_link menu_heading">НАЗВАНИЕ САЙТА</div></li>
+				<li><div class="menu_link" onclick = 'user_active.massage_views()' id = "sh_mass_views">виды массажа</div></li>
+				<li><div class="menu_link" onclick='head_views.views_head_show()'>обо мне</div></li>
+				<li><div class="menu_link" onclick = ''>контакты</div></li>
+			</ul>
+		</nav>
+		<div class="hidden" id = 'curtain'></div>
+	</header>
+	<main class="main">
+		<section class="massage_views" id='massage_sect'>
+			<div class="hidden_views" id='header_mass_views'>
+			  <div class="head_close_opac" onclick = 'user_active.close_but()' id= "close_but"><span class="cross"></span></div>
+		  </div>
+		  <div class="hidden" id = 'contact_cont'>
+		    <div class="hidden" onclick = 'close_contact()' id= "close_cont">
+		      <span class="cross_cont" id = 'cross_cont'></span>
+		    </div>
+		    <div class="hidden" id = 'contacts'>8 965 789 43 11</div>
+		  </div>
+			<div class="hidden" id="button_up" onclick="scroll_up()">
+			</div>
+			<!-- 1------------- -->
+			<div class="massage_view_to_r massage_view" id = "1">
+				<div class="description_cont" id = 'description_cont'>
+					<h2 class="description_heading" id="desc_head"> первый вид массажа</h2>
+					<p class="description_text" id="desc_text">
+						Dolore quod recusandae, voluptates architecto quisquam suscipit libero, molestias nam eos adipisci, nemo illo illum totam at quasi provident laborum exercitationem quae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quod recusandae, voluptates architecto quisquam suscipit libero, molestias nam eos adipisci, </p>
+				</div>
+				<div class="desc_img img_1" id="desc_img"></div>
+			</div>
+			<!-- 2-------------------- -->
+			<div class="hidden massage_view" id = "2">
+				<div class="description_cont" id = 'description_cont'>
+					<h2 class="description_heading" id="desc_head">второй вид массажа</h2>
+					<p class="description_text" id="desc_text">
+						Dolore quod recusandae, voluptates architecto quisquam suscipit libero, molestias nam eos adipisci, nemo illo illum totam at quasi provident laborum exercitationem quae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quod recusandae, voluptates architecto quisquam suscipit libero, molestias nam eos adipisci, </p>
+				</div>
+				<div class="desc_img img_2" id="desc_img"></div>
+			</div>
+			<!-- 3------------------------ -->
+			<div class="hidden massage_view" id="3">
+				<div class="description_cont" id = 'description_cont'>
+					<h2 class="description_heading" id="desc_head">третий вид массажа</h2>
+					<p class="description_text" id="desc_text">
+						Dolore quod recusandae, voluptates architecto quisquam suscipit libero, molestias nam eos adipisci, nemo illo illum totam at quasi provident laborum exercitationem quae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quod recusandae, voluptates architecto quisquam suscipit libero, molestias nam eos adipisci, </p>
+				</div>
+				<div class="desc_img img_3" id="desc_img"></div>
+			</div>
+			<!-- 4 ------------------------------>
+			<div class="hidden massage_view" id="4">
+				<div class="description_cont" id = 'description_cont'>
+					<h2 class="description_heading" id="desc_head">четвертый вид массажа</h2>
+					<p class="description_text" id="desc_text">
+						Dolore quod recusandae, voluptates architecto quisquam suscipit libero, molestias nam eos adipisci, nemo illo illum totam at quasi provident laborum exercitationem quae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quod recusandae, voluptates architecto quisquam suscipit libero, molestias nam eos adipisci, </p>
+				</div>
+				<div class="desc_img img_3" id="desc_img"></div>
+			</div>
+			<!-- 5 ------------------->
+			<div class="hidden massage_view" id="5">
+				<div class="description_cont" id = 'description_cont'>
+					<h2 class="description_heading" id="desc_head">ЫЫЫ вид массажа</h2>
+					<p class="description_text" id="desc_text">
+						Dolore quod recusandae, voluptates architecto quisquam suscipit libero, molestias nam eos adipisci, nemo illo illum totam at quasi provident laborum exercitationem quae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quod recusandae, voluptates architecto quisquam suscipit libero, molestias nam eos adipisci, </p>
+				</div>
+				<div class="desc_img img_3" id="desc_img"></div>
+			</div>
+			<!-- =========== -->
+			<div class="button_right" id="button_right" onclick='user_active.get_button(event)'></div>
+			<div class="button_left" id="button_left" onclick='user_active.get_button(event)'></div>
+			<!-- ================= -->
+		</section>
+		<!-- обо мне -->
+		<section class="about_me" id="about_sect">
+			<div class="about_me_1">
+				<div class="about_img_cont" id='about_me'>
+				</div>
+				<div class="about_cont">
+					<h2 class="about_heading">ОБО МНЕ</h2>
+					<p class="about_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quod recusandae, voluptates architecto quisquam suscipit libero, molestias nam eos adipisci, nemo illo illum totam at quasi provident laborum exercitationem quae.</p>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+	</footer>
+</div>
+<script src="js/script2.js"></script>
+</body>
+</html>
